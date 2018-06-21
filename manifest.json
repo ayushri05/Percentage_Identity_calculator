@@ -1,0 +1,24 @@
+{
+ "manifest_version": 2,
+		"name": "Percent_Identity",
+		"description": "skdjag",
+		"version": "1.0",
+
+		"browser_action":{
+			"default_popup": "textarea.html"
+
+		},
+		"background":{
+			
+		},
+		"content_scripts" : [{
+				"run_at": "document_start",
+				"matches":["file:///C:/Users/Ayushri/Desktop/New%20folder/textarea.html"],
+				"js":["jquery.js", "button.js", "button_sec.js", "button_third.js"]
+				}],
+	"permissions":[
+			"https://www.ncbi.nlm.nih.gov/nuccore/?term=human+skin",
+			"https://www.ncbi.nlm.nih.gov/structure/?term=insulin"
+		]
+
+}
